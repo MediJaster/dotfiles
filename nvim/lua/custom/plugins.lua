@@ -25,6 +25,8 @@ local plugins = {
         "eslint-lsp",
         "prettier",
         "typescript-language-server",
+
+        "clangd",
       },
     },
   },
