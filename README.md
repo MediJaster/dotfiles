@@ -4,7 +4,7 @@ A collection of my own personal dotfiles to sync configuration options and other
 ## Installation
 Installation for now is really simple, just run this command to clone the repository:
 ```bash
-git clone https://github.com/MediJaster/dotfiles ~/.dotfiles
+git clone https://gitlab.com/medijaster/dotfiles.git ~/.dotfiles
 ```
 Then, once inside the folder, run:
 ```bash
