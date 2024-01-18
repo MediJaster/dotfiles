@@ -1,0 +1,12 @@
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[window]
+decorations = "full"
+dynamic_padding = true
+opacity = 0.8
+
+[window.padding]
+x = 20
+y = 20
