@@ -26,6 +26,10 @@ local plugins = {
         "prettier",
         "typescript-language-server",
 
+        "java-language-server",
+        "java-debug-adapter",
+        "java-test",
+
         "clangd",
       },
     },
