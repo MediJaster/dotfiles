@@ -1,5 +1,3 @@
-eval "$(starship init zsh)"
-
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
 
@@ -24,4 +22,9 @@ export NVM_DIR="$HOME/.nvm"
 
 export EDITOR=nvim
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Arch Linux
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Fedora
+eval "$(starship init zsh)"
