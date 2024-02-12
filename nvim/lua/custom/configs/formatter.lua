@@ -6,6 +6,9 @@ local M = {
     typescript = {
       require("formatter.filetypes.typescript").prettier
     },
+    java = {
+      require("formatter.filetypes.java").prettier
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }

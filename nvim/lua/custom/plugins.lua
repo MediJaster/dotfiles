@@ -26,7 +26,6 @@ local plugins = {
         "prettier",
         "typescript-language-server",
 
-        "java-language-server",
         "java-debug-adapter",
         "java-test",
 
@@ -39,6 +38,14 @@ local plugins = {
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
+    end,
+  },
+  {
+    "mfussenegger/nvim-jdtls",
+    ft = "java",
+    dependencies = "neovim/nvim-lspconfig",
+    config = function()
+      require "custom.configs.nvim_jdtls"
     end,
   },
 }
