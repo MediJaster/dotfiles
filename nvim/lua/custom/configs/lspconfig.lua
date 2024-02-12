@@ -4,12 +4,15 @@ local on_attach = config.on_attach
 local capabilities = config.capabilities
 
 local lspconfig = require("lspconfig")
+-- Add servers that only need basic properties
+local servers = {"pyright", "clangd"};
 
-lspconfig.pyright.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = {"python"}
-})
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
 
 lspconfig.tsserver.setup({
   on_attach = on_attach,
@@ -19,14 +22,4 @@ lspconfig.tsserver.setup({
       disableSuggestions = true,
     }
   }
-})
-
-lspconfig.clangd.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-})
-
-lspconfig.java.setup({
-  on_attach = on_attach;
-  capabilities = capabilities;
 })
