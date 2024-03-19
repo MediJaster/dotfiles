@@ -5,8 +5,6 @@
 ;       *>! == Right Alt + Any Modifier
 ;       +>! == Right Alt + Shift
 
-; Right Alt == >!
-
 ; Symbols ;
 
 *>!1:: Send "¹"
@@ -62,7 +60,7 @@
 >!n:: Send "ñ"
 
 
-; Uppercase Letters ( +>! == Shift + Right Alt )
+; Uppercase Letters
 
 +>!e:: Send "È"
 
