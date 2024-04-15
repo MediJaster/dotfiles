@@ -1,9 +1,12 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
 ;   LEGEND  ;
 ;       >!  == Right Alt
 ;       *>! == Right Alt + Any Modifier
 ;       +>! == Right Alt + Shift
+
+; Disable Alt+Space ;
+>!Space::Return
 
 ; Symbols ;
 
